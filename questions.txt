@@ -1,0 +1,18 @@
+Thought Provoking Questions
+1. How might you compare two characters without reference to case? How might you do this without destroying the character variable(s) contents?
+We can just compare the two characters by just converting them to the same case (lowercase) then comparing them. To do this without
+destroying the constants we can just compare the return values from the toLower() function. 
+
+2. How can you compare two strings in a case-insensitive way without destroying their contents?
+We can make a copy of the two strings where both strings are converted to lowercase.
+
+3. What kind of arguments should your string comparison function take? Are you going to pass these arguments by value or by reference?
+two string agruments and a bool argument for if we want to skip spaces.I am going to pass the strings by reference so we don't have to make a copy
+of them which saves memory.
+
+4. Why do you think the return value of strcmp is “greater than zero”, “less than zero”, and “equal to zero” rather than -1, 0, 1 specifically?
+It returns the exact difference of the strings directly.
+
+5. What cases might you need to consider to test your function thoroughly? How many tests have you had to write to feel confident in your code
+Equal strings, different capitalizations, different strings, and edge cases like space only strings or different length strings. So probably
+at least 12 tests.

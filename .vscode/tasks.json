@@ -7,7 +7,7 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "${fileDirname}\\**.cpp", // https://stackoverflow.com/a/59236875
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

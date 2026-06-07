@@ -3,8 +3,8 @@
 
 #include <string>
 
-std::string cleanString(std::string str, bool skipSpace);
+std::string cleanString(const std::string& str, bool skipSpace);
 
-short strcmp_case_insensitive(std::string string1, std::string string2, bool skipSpace = false);
+short strcmp_case_insensitive(const std::string& str1, const std::string& str2, bool skipSpace = false);
 
 #endif
